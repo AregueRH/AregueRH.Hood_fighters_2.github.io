@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+    
+    <div class="container">
+        <div class="titreJeu">    
+            <h2>Hood Fighters II</h2>
+        </div>
+        
+        <div class="encadreTexteContextuel" v-html="html"></div>
+        <div class="encadreTexteCombat" v-html="htmlCombat"></div>
+        <div v-if="modeCombat" class="info">
+            <p> le COUP D'EPEE inflige 50 dégâts, <br><br> le CONTRE DU BOUCLIER désarsonne l'ennemi qui perd 5 d'attaque et subi 40 dégâts</p>
+        </div>
+ 
+    
+    
+    <div class="btns">
+        <button v-if="modeCombat" v-on:click="coupEpee(ennemi)" ype="submit" class="boutonCombat1" id="IdCoupEpee">Coup d'épée</button>
+       
+        <button v-if="modeCombat" v-on:click="contreBouclier(ennemi)" type="submit" class="boutonCombat2" id="IdBouclier">Contre du bouclier</button>
+      
+        
+        <button v-if="!modeCombat" v-on:click="compteurSalle" type="submit" class="salleSuivante" id="IdSalleSuivante" name="btnLaSalleSuivante">Avancer vers la salle suivante</button>
+    </div>
+    
+</div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

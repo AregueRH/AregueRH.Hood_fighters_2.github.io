@@ -1,0 +1,117 @@
+body{
+    background-color: #5a5547;
+}
+
+h2{
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.titreJeu{
+    color: rgb(117, 5, 27);
+    /* background-color: crimson; */
+    margin: auto;
+    width: 400px;
+    height: 100px;
+    font-family: fantasy;
+    text-align: center;
+    font-size: 30px;
+}
+
+.encadreTexteContextuel{
+    background-color: rgb(11, 119, 92);
+    margin: 50px auto;
+    width: 600px;
+    height: 300px;
+    text-align: justify;
+    padding: 30px;
+    line-height: 1.5;
+    font-size: large;
+    border: 4px solid #0e5508;
+    border-radius: 3%;    
+}
+
+.encadreTexteCombat{
+    display: flex;
+    background-color: rgb(10, 137, 175);
+    margin: auto;
+    width: 600px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 14px;
+    text-align: center;
+    border: 4px dashed #4869af;
+    border-radius: 3%;
+}
+.bouton{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.boutonCombat1{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: rgb(153, 24, 49);
+    color: #88ff00f1;
+}
+
+.boutonCombat2{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: rgb(24, 80, 153);
+    color: #fbff00c0;
+}
+
+.salleSuivante{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: rgb(24, 153, 52);
+    color: #7e0cacce;
+}
+
+.btns{
+    display: flex;
+    /* background-color: #0e5508; */
+    width: 600px;
+    height: 100px;
+    margin: auto;
+    gap: 20px;
+}
+
+button{
+    margin: auto;
+}
+
+.info{
+    position: absolute;
+    display: flex;
+    background-color: rgb(143, 196, 182);
+    width: 200px;
+    height: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    padding: 15px;
+    margin: 80vh 30vh;
+    border-radius: 15px;
+}
